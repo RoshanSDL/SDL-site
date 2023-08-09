@@ -1,0 +1,223 @@
+/*========== Text Animation Start =========== */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    transform: translateX(-20px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes moveUp {
+  0% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeBgColor {
+  0% {
+    background: none;
+  }
+  70% {
+    background: none;
+  }
+  100% {
+    background: #464646;
+  }
+}
+.animatable {
+  visibility: hidden;
+  animation-play-state: paused;
+}
+
+.animate-in {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running;
+}
+
+.animate-out {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running;
+  animation-direction: reverse;
+}
+.animate-out:after {
+  content: "";
+  letter-spacing: inherit;
+}
+
+.animate-in.animationDelay {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.animate-out.animationDelay {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.animate-in.animationDelayMed {
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+}
+
+.animate-out.animationDelayMed {
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+}
+
+.animate-in.animationDelayLong {
+  animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+}
+
+.animate-out.animationDelayLong {
+  animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+}
+
+.animate-in.fadeBgColor {
+  animation-name: fadeBgColor;
+}
+
+.animate-out.fadeBgColor {
+  animation-name: fadeBgColor;
+}
+
+.animate-in.bounceIn {
+  animation-name: bounceIn;
+}
+
+.animate-out.bounceIn {
+  animation-name: bounceIn;
+}
+
+.animate-in.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+.animate-out.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+.animate-in.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+.animate-out.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+.animate-in.fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate-out.fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate-in.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animate-out.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animate-in.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate-out.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate-in.moveUp {
+  animation-name: moveUp;
+}
+
+.animate-out.moveUp {
+  animation-name: moveUp;
+}
+
+/*========== Text Animation  End =========== *//*# sourceMappingURL=animations.css.map */

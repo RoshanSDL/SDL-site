@@ -1,0 +1,25 @@
+//
+// Grid mixins
+//
+
+// including variables and mixins
+@import "theme/variables";
+@import "theme/mixins";
+@import "theme/flexbox";
+@import "theme/reset";
+@import "theme/predefined";
+
+// Custom Scss
+@import "theme/elements";
+@import "theme/global-styles";
+@import "theme/header";
+@import "theme/home";
+@import "theme/about";
+@import "theme/services";
+@import "theme/industries";
+@import "theme/blog";
+@import "theme/careers";
+@import "theme/clients";
+@import "theme/animations";
+@import "theme/footer";
+@import "theme/global-media-query.scss";

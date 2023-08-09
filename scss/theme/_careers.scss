@@ -1,0 +1,785 @@
+$color_1: #999a9b;
+$color_2: #fff;
+$background-color_1: transparent;
+$background-color_2: #669999;
+
+/* 
+  Gallery Item Hover Effect
+  https://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+*/
+/* Common style */
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+#gallery {
+	background: $bg1;
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+.tm-page-cols-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.tm-page-col-left {
+	width: 28.56%;
+	max-width: 400px;
+}
+.tm-page-col-right {
+	width: 70%;
+	margin-left: auto;
+	margin-right: 0;
+}
+.tm-gallery {
+	margin: -20px -20px 0;
+	max-width: 960px;
+}
+.tm-gallery-item {
+	width: 29%;
+	margin: 2%;
+	figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin-bottom: 0;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+		img {
+			position: relative;
+			display: block;
+			min-height: 100%;
+			max-width: 100%;
+			opacity: 0.8;
+		}
+		figcaption {
+			padding: 1em;
+			color: $color_2;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			&::before {
+				pointer-events: none;
+			}
+			&::after {
+				pointer-events: none;
+			}
+			>a {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1000;
+				text-indent: 200%;
+				white-space: nowrap;
+				font-size: 0;
+				opacity: 0;
+			}
+		}
+		h2 {
+			word-spacing: -0.15em;
+			font-weight: 300;
+			margin: 0;
+			span {
+				font-weight: 800;
+			}
+		}
+		p {
+			margin: 0;
+			letter-spacing: 1px;
+			font-size: 68.5%;
+		}
+	}
+}
+.filters-button-group {
+	padding-right: 15px;
+}
+.tabs {
+	list-style: none;
+	>li {
+		>a {
+			border: 1px solid $text-color;
+			color: $text-color;
+			padding: 20px 25px;
+			display: block;
+			max-width: 300px;
+			margin: 0 auto 30px;
+			&:hover {
+				.tm-tab-icon {
+					background-color: $primary-color;
+				}
+			}
+		}
+		>a.active {
+            color:$primary-color;
+            border: 1px solid $primary-color;
+			.tm-tab-icon {
+				background-color: $primary-color;
+			}
+		}
+	}
+}
+.tm-tab-icon {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: $background-color_1;
+	vertical-align: middle;
+	margin-right: 20px;
+	transition: all 0.3s ease;
+}
+figure.effect-bubba {
+	background: #9e5406;
+	img {
+		opacity: 1;
+		-webkit-transition: opacity 0.35s;
+		transition: opacity 0.35s;
+	}
+	&:hover {
+		img {
+			opacity: 0.4;
+		}
+		figcaption {
+			&::before {
+				opacity: 1;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+			&::after {
+				opacity: 1;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+		h2 {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+		p {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	figcaption {
+		&::before {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			bottom: 15px;
+			left: 15px;
+			content: "";
+			opacity: 0;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			-webkit-transform: scale(0, 1);
+			transform: scale(0, 1);
+		}
+		&::after {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			bottom: 15px;
+			left: 15px;
+			content: "";
+			opacity: 0;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			border-right: 1px solid #fff;
+			border-left: 1px solid #fff;
+			-webkit-transform: scale(1, 0);
+			transform: scale(1, 0);
+		}
+	}
+	h2 {
+		font-size: 1.5rem;
+		padding-top: 20%;
+		-webkit-transition: -webkit-transform 0.35s;
+		transition: transform 0.35s;
+		-webkit-transform: translate3d(0, -20px, 0);
+		transform: translate3d(0, -20px, 0);
+	}
+	p {
+		width: 100%;
+		padding: 10px;
+		opacity: 0;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(0, 20px, 0);
+		transform: translate3d(0, 20px, 0);
+	}
+}
+
+
+
+.why-sqr{
+	.whyus-para{
+		background-color: $white;
+		line-height: 25px;
+		padding: 30px 0px;
+		padding-left: 30px;
+		span{
+			font-weight: 800;
+		}
+
+	}
+	
+.collage1 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px 20px;
+  }
+  
+  .grid-container {
+	margin: auto;
+	max-width: 600px;
+	aspect-ratio: 1/1;
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+  }
+  
+  .collage1 .item {
+	border: 5px solid white;
+  }
+  
+  
+  .item {
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px 0px;
+	img {
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		   object-fit: cover;
+	  }
+  }
+  
+  .item1 {
+	z-index: 10;
+	grid-area: 1/6/5/10;
+  }
+  
+  .item2 {
+	z-index: 6;
+	grid-area: 5/1/11/7;
+  }
+  
+  .item3 {
+	z-index: 5;
+	grid-area: 4/6/11/13;
+  }
+  
+  .item4 {
+	grid-area: 2/-1/8/-7;
+  }
+  
+  .item5 {
+	z-index: 10;
+	grid-area: 7/-3/10/-6;
+  }
+  
+  .item6 {
+	z-index: 6;
+	grid-area: -1/3/-9/11;
+  }
+  
+  .item7 {
+	z-index: 6;
+	grid-area: -3/-2/-9/-8;
+  }
+  
+  .grid-container > * {
+	transition: all 0.5s;
+  }
+  .grid-container > *:hover {
+	z-index: 99;
+	transform: scale(1.3);
+  }
+}
+
+
+
+
+.nav-item .nav-link,
+.nav-tabs .nav-link {
+    -webkit-transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+}
+
+.card a {
+    -webkit-transition: all 150ms ease 0s;
+    -moz-transition: all 150ms ease 0s;
+    -o-transition: all 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: all 150ms ease 0s;
+}
+
+[data-toggle="collapse"][data-parent="#accordion"] i {
+    -webkit-transition: transform 150ms ease 0s;
+    -moz-transition: transform 150ms ease 0s;
+    -o-transition: transform 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: transform 150ms ease 0s;
+}
+
+[data-toggle="collapse"][data-parent="#accordion"][aria-expanded="true"] i {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.nav-tabs {
+    border: 0;
+    padding: 15px 0.7rem;
+}
+
+.card .nav-tabs {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.nav-tabs>.nav-item>.nav-link {
+	width: 150px;
+	text-align: center;
+    color: $white;
+    margin: 0;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+	border-top-left-radius: 0rem !important;
+    border-top-right-radius: 0rem !important;
+    font-size: 14px;
+    padding: 11px 23px;
+    line-height: 1.5;
+}
+
+.nav-tabs>.nav-item>.nav-link:hover {
+    background-color: transparent;
+	color: $white;
+	border-bottom: 1px solid $white;
+}
+
+.nav-tabs>.nav-item>.nav-link.active {
+    background-color: transparent;
+    color: $white;
+	border: 1px solid $white;
+}
+
+.nav-tabs>.nav-item>.nav-link i.now-ui-icons {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+}
+
+.nav-tabs.nav-tabs-neutral>.nav-item>.nav-link {
+    color: $white;
+}
+
+.nav-tabs.nav-tabs-neutral>.nav-item>.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $white;
+}
+
+.card {
+    border: 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+	word-wrap: normal !important;
+    margin-bottom: 30px;
+	padding:10px;
+	.card-header{
+		cursor: pointer;
+		padding: 0px !important;
+		background-color: $primary-color;
+		border-bottom: 0px !important;
+	}
+}
+
+
+
+
+
+
+
+
+.acc {
+	overflow: hidden;
+	padding: 0;
+  }
+  
+  .acc li {
+	list-style-type:disclosure-closed;
+	padding: 0;
+	&::before{
+		color: $primary-color;
+	}
+  }
+  
+  .acc_ctrl {
+	background: #FFFFFF;
+	text-align:left;
+	border: none;
+	border-bottom: solid 1px #F2F2F2;
+	cursor: pointer;
+	display: block;
+	outline: none;
+	padding: 1em;
+	position: relative;
+	width: 100%;
+	.position{
+		font-family: $primary-font;
+		font-size: 20px;
+		font-weight: 400;
+	}
+  }
+  
+  .acc_ctrl:before {
+	background: $primary-color;
+	content: '';
+	height: 2px;
+	margin-right: 37px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	width: 14px;
+  }
+  
+  .acc_ctrl:after {
+	background: $primary-color;
+	content: '';
+	height: 2px;
+	margin-right: 37px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 14px;
+  }
+  
+  .acc_ctrl.active:before {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+  }
+  
+  .acc_ctrl.active h2, .acc_ctrl:focus h2 {
+	position: relative;
+  }
+  
+  .acc_panel {
+	background: $bg1;
+	display: none;
+	overflow: hidden;
+	text-align: left;
+	padding: 1em;
+	.career_req{
+		padding: 1em 2.5em;
+		margin: 1em 0em;
+		background: #fff;
+		line-height: 30px;
+	}
+  }
+
+
+
+
+
+  *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: $bg1;
+  color: $white;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: $primary-color;
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent $primary-color transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent $primary-color;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: $primary-color;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent $primary-color transparent transparent;
+  }
+}
+
+
+/* EXTRA/CLIP PATH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline-clippy ul li::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.timeline-rhombus ul li::after {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.timeline-rhombus ul li div::before {
+  bottom: 12px;
+}
+
+.timeline-star ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.timeline-heptagon ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+
+.timeline-infinite ul li::after {
+  animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.25);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .nav-tabs {
+        display: inline-block;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+    }
+
+    .nav-tabs .nav-item>.nav-link {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+	.tm-page-cols-container {
+		flex-direction: column;
+	}
+	.tm-page-col-left {
+		width: 100%;
+		max-width: 100%;
+	}
+	.tm-page-col-right {
+		width: 100%;
+	}
+}
+@media (max-width: 767px) {
+	.tm-gallery {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tm-gallery-item {
+		width: 46%;
+	}
+	.filters-button-group {
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+}
+@media (max-width: 400px) {
+	.tm-gallery {
+		max-width: 280px;
+	}
+	.tm-gallery-item {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
