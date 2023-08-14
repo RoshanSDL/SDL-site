@@ -98,10 +98,17 @@ img {
 		}
 	}
 }
-
+ .our-mission{
+	border:1px solid $bg1;
+	margin:20px auto;
+}
+.our-vision{
+	border:1px solid $bg1;
+	margin:20px auto;
+}
 .about-section {
 	position: relative;
-	padding: 120px 0 70px;
+	padding: 50px 0 70px;
 	.sec-title {
 		margin-bottom: 45px;
 	}
@@ -109,9 +116,7 @@ img {
 		position: relative;
 		margin-bottom: 50px;
 		.inner-column {
-			position: relative;
-			padding-left: 30px;
-			
+			position: relative;				
 		}
 	}
 	.text {
@@ -556,4 +561,12 @@ img {
 			z-index: 99;
 		}
 	}
+}
+
+
+@media (max-width:782px){
+.vision_and_mission {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+}
 }
