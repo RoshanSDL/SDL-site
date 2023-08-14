@@ -143,9 +143,6 @@ img {
 			margin-top: -175px;
 			font-weight: 500;
 		}
-		img{
-			width:50%;
-			}
 		.inner-column {
 			position: relative;
 			padding-left: 80px;
@@ -471,7 +468,8 @@ img {
 		transition: .6s;
 		z-index: 99;
 	}
-}
+	
+
 .img {
 	img {
 		width: 100%;
@@ -487,6 +485,7 @@ img {
 	right: 0;
 	opacity: 0;
 	transition: .6s;
+	
 	h3 {
 		font-size: 15px;
 		font-family: $primary-font;
@@ -503,12 +502,13 @@ img {
 		color: $color_3;
 	}
 	.social-links {
+		display: block !important;
 		a {
 			i{
 				color: $primary-color;
 			}
 			
-			margin-right: 15px;
+			margin-right: 5px;
 			font-size: 21px;
 			transition: .6s all ease-in;
 			&:hover i{
@@ -517,11 +517,43 @@ img {
 		}
 	}
 }
-.social-links {
-	a {
+}
+}
+@media (max-width:1380px){
+	.profile-card {
+		position: relative;
+		font-family: $primary-font;
+		width: 200px;
+		height: 200px;
+		background: #fff;
+		padding: 10px;
+		border-radius: 50%;
+		border: 2px solid rgb(228, 228, 228);
+		transition: .6s;
+		margin: 0 25px;
 		&:hover {
-			color:  $text-color;
+			border-radius: 0px;
+			height: 260px;
+			padding: 25px;
+			.img {
+				transform: translateY(-80px) !important;
+			}
+			img {
+				border-radius: 0px;
+			}
+			.caption {
+				opacity: 1;
+				&:nth-child(1){
+					color: $color_3;
+				}
+			}
+		}
+		.img {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			transition: .6s;
+			z-index: 99;
 		}
 	}
-}
 }

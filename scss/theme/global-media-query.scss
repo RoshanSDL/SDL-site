@@ -33,7 +33,7 @@
 	.container {
 		flex-direction: column-reverse;
 		height: auto;
-		width: 315px;
+		width: 350px;
 		margin: 70px auto;
 		top: unset;
 		position: unset;
@@ -241,6 +241,7 @@
                     right: 20px;
                     bottom: 0px;
                     left: 20px;
+					top: 103px;
                     height: calc(60% - 21px);
                     border: 5px solid #fff;
                 }
@@ -251,6 +252,9 @@
 }
 
 @media (max-width:782px) {
+	.home-banner-area {
+		margin-bottom: 0em !important;
+	  }
 	
     .profile-card {
         position: relative;
@@ -261,7 +265,7 @@
         padding: 30px;
         
         transition: .6s;
-        margin: 0 25px;
+        margin: 10px 25px !important;
         .img {
             border-radius: 0px !important;
             transform: translateY(-60px) !important;
@@ -306,9 +310,9 @@
                     bottom: 4%;
                     padding: 7px 10px;
                     left: 24%;
-                    width: calc(100% - 100px);
+                    width: calc(100% - 65px);
                     h2{
-                        font-size: 16px;
+                        font-size: 14px;
                         letter-spacing: 1px;
                         text-align: center;
                         color: #292b2c;

@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="Ex-lib/Ex-lib-css/animate/animate.min.css">
+    <link rel="stylesheet" href="Ex-lib/Ex-lib-css/animate/animate.css">
   </head>
 
   <body>
@@ -111,7 +113,7 @@
                     <a class="nav-link cool-link" href="careers.html">Careers</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link cool-link" href="blogs.html">Podcasts</a>
+                    <a class="nav-link cool-link" href="blogs.html">Articles</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link cool-link" href="contact.html">Contact</a>
@@ -134,10 +136,17 @@
               <img class="img-fluid" src="img/banner/b2.jpg" alt="" />
               <div class="text-wrapper vam_text">
                 <a href="#" class="d-flex slide__content slide__content__left">
+                  <div
+                    class="layer-1-1 hidden-xs wow slideInUp"
+                    data-wow-duration="2s"
+                    data-wow-delay=".2s"
+                  >
                   <h2 class="vam_text_h3 slide__content--headings text-left">
                     Empowering <br />
                     Digital commerce
                   </h2>
+                </div>
+                 
                 </a>
               </div>
             </div>
@@ -206,7 +215,10 @@
               <div class="sec-title ">
                 <!-- <span class="title ">About SquareDataLabs</span> -->
                 <div class="vam_text">
-                  <h1 class="vam_text_h1 text-anim data-splitting">About<br/>SquareDataLabs</h1>
+                  
+                <h1 class="vam_text_h1 hidden-xs wow slideInUp text-anim data-splitting" data-wow-duration="2s"
+                data-wow-delay=".2s">About<br/>Square DataLabs</h1>
+                 
                 </div>
                 <div class="col-md-6 px-5">
                   
@@ -292,7 +304,7 @@
               <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
               <figcaption>
                   <div class="show-cont">
-                    <h4 class="card-main-title">Ecommerece</h4>
+                    <h4 class="card-main-title">Ecommerce</h4>
                       <h5 class="card-no">Solutoins</h5>
                      
                   </div>
@@ -1324,6 +1336,7 @@
 <!--================ End Footer Area =================-->
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="Ex-lib/Ex-lib-js/wow/wow.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
       integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
@@ -1337,6 +1350,7 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    
     <script
       type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
@@ -1346,8 +1360,8 @@
 
 <!-- Animation script -->
 
-<script src="https://unpkg.com/splitting/dist/splitting.js"></script>
-<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<script src="./Ex-lib/Ex-lib-js/splitting.js"></script>
+<script src="./Ex-lib/Ex-lib-js/scroll-out.min.js"></script>
 <script>
   var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
   Splitting();

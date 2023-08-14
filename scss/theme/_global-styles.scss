@@ -635,3 +635,65 @@
 }
 
 	// ============   media query     ============== //
+	// ============   Ecommerce solution page start     ============== //
+
+	.timeline-box{
+		min-height:50px;
+		padding:0.5em 1em;
+		background: $bg1;
+		margin:20px auto;
+		justify-content: left;
+		vertical-align: middle;
+		.title-02{
+			color: $primary-color;
+			margin-bottom:10px;
+			margin-top:20px;
+			text-align: left;
+			&::after{
+				font-family: FontAwesome;
+				display: inline-block;
+			   	position:absolute;
+				transform:translate(50%, 0%);
+				vertical-align: middle;
+				content: "\2794";
+			}
+			
+		}
+		
+	}
+
+	.suprts{
+		margin-top:1em;
+		padding: 1em;
+		border:1px solid $bg1;
+		min-height: 225px;
+		ul{
+			margin-left: 1em;
+			li{
+				font-weight:500;
+				list-style-type: disclosure-closed;
+				line-height: 15px;
+				margin:8px auto;
+			}
+		}
+		h4{
+			font-weight: 700;
+			margin:10px auto;
+		}
+		
+	}
+	
+	// ============   Ecommerce solution page endt     ============== //
+	.sub-box{
+		background-color: $bg1;
+		padding: 1em;
+	}
+	.comn-ul{
+		margin-left: 1.5em;
+		li{
+			list-style-type: disclosure-closed;
+			font-weight: 500;
+			margin:10px;
+			line-height: 12px;
+		}
+	}

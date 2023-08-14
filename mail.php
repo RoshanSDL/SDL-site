@@ -113,7 +113,7 @@
                   <a class="nav-link" href="careers.html">Careers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="blogs.html">Blogs</a>
+                  <a class="nav-link" href="blogs.html">Articles</a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="contact.html">Contact</a>

@@ -101,7 +101,7 @@
 	color: $color_2;
 }
 .card-content {
-	color: $white;
+	color: $text-color;
 	margin-top: 20px;
 	line-height: 22px;
 	font-size: 15px;
@@ -1506,12 +1506,12 @@ $poppins: 'Poppins', sans-serif;
 input {
 	clear: both;
 	padding-top: 10px;
-	display: none;
+	
 }
 .tab-content {
 	clear: both;
 	padding-top: 10px;
-	display: none;
+	
 }
 label {
 	font-weight: 600;
@@ -1615,4 +1615,45 @@ label {
 }
 
 /* ======== Tabs section End ========*/
+.border-divs{
+	border: 1px solid $bg1;
+	background: $bg1;
+	padding:1em 0;
+}
+.text-offshore{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+.img-offshore{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	img{
+		max-height: 300px;
+	}
+}
+
+.data-box{
+	border:1px solid $bg1;
+	background: $bg1;
+	padding:10px;
+	min-height: 290px;
+	h4{
+		color:$white;
+		padding:5px 5px;
+		background: $text-color;
+	}
+	ul{
+		margin-left: 1em;
+		li{
+			list-style-type: disclosure-closed;
+			color: $text-color;
+			font-weight: 500;
+			line-height: 20px;
+			margin: 10px 0;
+		}
+	}
+}
 
