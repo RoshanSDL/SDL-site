@@ -1,29 +1,4 @@
-/* Causes Area css
-============================================================================================ */
-.causes_area {
-}
-.causes_slider {
-  .owl-dots {
-    text-align: center;
-    margin-top: 80px;
-    .owl-dot {
-      height: 14px;
-      width: 14px;
-      background: #eeeeee;
-      display: inline-block;
-      margin-right: 7px;
-      &:last-child {
-        margin-right: 0px;
-      }
-      &.active {
-        background: $primary-color;
-      }
-    }
-  }
-}
 
-/* End Causes Area css
-============================================================================================ */
 
 /*================= latest_blog_area css =============*/
 .latest_blog_area {
@@ -134,15 +109,17 @@
   }
   &:hover {
     .categories_details {
-      background: rgba(234, 44, 88, 0.85);
+      background: $bg1;
     }
   }
 }
 
 /*============ blog_left_sidebar css ==============*/
 .blog_area {
+  position: relative;
 }
 .blog_left_sidebar {
+  position: relative;
 }
 .blog_item {
   margin-bottom: 40px;
@@ -267,7 +244,7 @@
 
 .widget-wrap {
   @media (max-width: 991px) {
-    margin-top: 80px;
+    margin-top: 30px;
   }
   .single-sidebar-widget {
     padding: 50px 30px;

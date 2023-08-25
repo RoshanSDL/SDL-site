@@ -157,11 +157,11 @@ if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
  
-	$email_to = "arun@squaredatalabs.com";
+	$email_to = "sales@squaredatalabs.com";
 	
 
  
-    $email_subject = "SQUARE DATALABS - Enquiry";
+    $email_subject = "SQUARE DATALABS - Proposal Enquiry";
  
  
     function died($error) {
@@ -286,13 +286,13 @@ $headers = 'From: '.$email_from."\r\n".
  
  
 <!-- include your own success html here-->
- 
+ <div class="mt-5 mb-5">
           <h2>Thank you for  <span>your interest in us!</span></h2>
           <p>We will be in touch with you very soon.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-           <a href="https://www.squaredatalabs.com/" class="btn-get-started">Back to Page</a>
+           <a href="https://www.squaredatalabs.com/" class="btn-style-one">Back to Page</a>
 	
-		  
+  </div>
 		  <?php
  
 }

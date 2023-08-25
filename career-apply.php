@@ -161,7 +161,7 @@ if(isset($_POST['email'])) {
 	
 
  
-    $email_subject = "SQUARE DATALABS - Enquiry";
+    $email_subject = "SQUARE DATALABS - CAREER APPLICATION";
  
  
     function died($error) {
@@ -192,7 +192,7 @@ if(isset($_POST['email'])) {
  
         !isset($_POST['telephone']) ||
  
-        !isset($_POST['message'])) {
+        !isset($_POST['application'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
  
@@ -209,7 +209,7 @@ if(isset($_POST['email'])) {
  
     $telephone = $_POST['telephone']; // not required
  
-    $message = $_POST['message']; // required
+    $application = $_POST['application']; // required
  
      
  
@@ -265,7 +265,7 @@ if(isset($_POST['email'])) {
 	
     $email_message .= "job-role: ".clean_string($job-role)."\n";
   
-    $email_message .= "Message: ".clean_string($message)."\n";
+    $email_message .= "application: ".clean_string($application)."\n";
  
      
  
@@ -286,13 +286,13 @@ $headers = 'From: '.$email_from."\r\n".
  
  
 <!-- include your own success html here-->
- 
+ <div class="mt-5 mb-5">
           <h2>Thanks... <span>your application has been submitted!</span></h2>
           <p>We will be in touch with you very soon.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-           <a href="https://www.squaredatalabs.com/" class="btn-get-started">Back to home</a>
+           <a href="https://www.squaredatalabs.com/" class="btn-style-one">Back to home</a>
 	
-		  
+  </div>
 		  <?php
  
 }

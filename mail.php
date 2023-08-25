@@ -147,11 +147,11 @@
 		
     <?php
     $to = 'arun@squaredatalabs.com';
-    $name = $_POST["name"];
+    $name = $_POST["fullname"];
     $email= $_POST["email"];
-    $guests= $_POST["guests"];
-    $phone= $_POST["meal"];
-    $notes= $_POST["notes"];
+   
+    $phone= $_POST["phone"];
+    $notes= $_POST["comments"];
     
 
 
@@ -182,11 +182,11 @@
         </div>
 		
 		
-         <div class="col-lg-6 order-1 order-lg-2">
+         <div class="col-lg-6 order-1 order-lg-2 mt-5 mb-5">
          <h2>Thank you for  <span>contacting us!</span></h2>
           <p>We will be in touch with you very soon.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-           <a href="https://www.squaredatalabs.com/" class="btn-get-started">Back to Page</a>
+           <a href="https://www.squaredatalabs.com/" class="btn-style-one">Back to Page</a>
         </div>
         </div>
       </div>

@@ -35,24 +35,27 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="lib/aos/aos.css">
+
   </head>
 
   <body>
     <!--================ Start Social media Bars =================-->
 
+  
     <!-- Floating Social Media bar Starts -->
-<div class="float-sm">
-  <div class="fl-fl float-fb">
-    <i class="fa fa-phone"></i>
-    <a href="" target="_blank"> Say hello!</a>
-  </div>
-  <div class="fl-fl float-tw">
-    <i class="fa fa-whatsapp"></i>
-    <a href="" target="_blank">Reach out!</a>
-  </div>
+    <div class="float-sm">
+      <div class="fl-fl float-fb">
+       <a href="tel:+971 564651977" target="_blank"> <i class="fa fa-phone"></i> 
+         Say hello!</a>
+      </div>
+      <div class="fl-fl float-tw">
+        
+        <a href="https://api.whatsapp.com/send?phone=+971 564651977&text=Hello SquareDataLabs" target="_blank"><i class="fa fa-whatsapp"></i> Reach out!</a>
+      </div>
 
-</div>
-<!-- Floating Social Media bar Ends -->
+    </div>
+  <!-- Floating Social Media bar Ends -->
 
     <!--================ End Social media Bars =================-->
 
@@ -127,11 +130,11 @@
     <!--================ End Header Area =================-->
 
     <!--================ Start banner Area =================-->
-    <section class="banner-area5 relative">
+    <section class="banner-area3 relative">
         <div class="overlay overlay-bg"></div>
       <div class="banner-content text-center">
-        <h1>SFCC</h1>
-        <p>SFCC (Salesforce Commerce Cloud) is a cloud-based e-commerce platform that allows businesses to build and manage online storefronts, manage product catalogs, process payments, and fulfill orders. It was originally created by Demandware in 2004 and acquired by Salesforce in 2016.  </p>
+        <h1 data-aos="fade-right">SFCC</h1>
+        <p data-aos="fade-right" data-aos-delay="100">SFCC (Salesforce Commerce Cloud) is a cloud-based e-commerce platform that allows businesses to build and manage online storefronts, manage product catalogs, process payments, and fulfill orders. It was originally created by Demandware in 2004 and acquired by Salesforce in 2016.  </p>
       </div>
     </section>
     <!--================ End banner Area =================-->
@@ -142,15 +145,15 @@
         <div class="row">
           <div class="col-lg-8">
 
-                <div class="single-amenities">
-                  <div class="amenities-thumb">
+            <div class="single-amenities" data-aos="fade-up" data-aos-delay="100">
+              <div class="amenities-thumb" data-aos="fade-right" data-aos-delay="200">
                     <img
                       class="img-fluid w-100"
                       src="img/blog-post/blog-post3.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="amenities-details">
+                  <div class="amenities-details" data-aos="fade-up" data-aos-delay="400">
                     <h2>What is SFCC</h2>
                     <div class="amenities-meta mb-10">
                       <a href="#" class=""
@@ -385,7 +388,7 @@
           </div>
 
           <!-- Start Blog Post Siddebar -->
-          <div class="col-lg-4 sidebar-widgets">
+          <div class="col-lg-4 sidebar-widgets" data-aos="fade-up" data-aos-delay="300">
               <div class="widget-wrap">
                 
 
@@ -426,59 +429,7 @@
                   </ul>
                 </div>
 
-                <div class="single-sidebar-widget popular-post-widget">
-                  <h4 class="popular-title">Popular Posts</h4>
-                  <div class="popular-post-list">
-                    <div class="single-post-list">
-                      <div class="thumb">
-                        <img class="img-fluid" src="img/blog/pp1.jpg" alt="">
-                      </div>
-                      <div class="details mt-20">
-                        <a href="blog-single.html">
-                          <h6>Retro-electric 1967 Ford Mustang 
-                              revealed in Russia</h6>
-                        </a>
-                        <p>Mate Winston | Dec 15</p>
-                      </div>
-                    </div>
-                    <div class="single-post-list">
-                      <div class="thumb">
-                        <img class="img-fluid" src="img/blog/pp2.jpg" alt="">
-                      </div>
-                      <div class="details mt-20">
-                        <a href="blog-single.html">
-                          <h6>Unsettling trend of food safety at 
-                              sports stadiums uncovered</h6>
-                        </a>
-                        <p>Mate Winston | Dec 15</p>
-                      </div>
-                    </div>
-                    <div class="single-post-list">
-                      <div class="thumb">
-                        <img class="img-fluid" src="img/blog/pp3.jpg" alt="">
-                      </div>
-                      <div class="details mt-20">
-                        <a href="blog-single.html">
-                          <h6>Christmas cottage from the Holiday
-                              flick selling for people</h6>
-                        </a>
-                        <p>Mate Winston | Dec 15</p>
-                      </div>
-                    </div>
-                    <div class="single-post-list">
-                      <div class="thumb">
-                        <img class="img-fluid" src="img/blog/pp4.jpg" alt="">
-                      </div>
-                      <div class="details mt-20">
-                        <a href="blog-single.html">
-                          <h6>Home improvement advice every 
-                              homeowner needs to know</h6>
-                        </a>
-                        <p>Mate Winston | Dec 15</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
 
                 <div class="single-sidebar-widget newsletter-widget">
                   <h4 class="newsletter-title">Newsletter</h4>
@@ -503,73 +454,79 @@
 
     <!--================ Start Client Slider Area =================-->
 
-    <section id="clients">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="sec-title ">
-              <!-- <span class="title ">About SquareDataLabs</span> -->
+  <section id="clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sec-title ">
+            <!-- <span class="title ">About SquareDataLabs</span> -->
+            
+            <div class="col-md-6 px-5">
               
-              <div class="col-md-6 px-5">
-                
-              </div>
-              <h5 class="mt-5 vam_head_h3">Associations</h5>
             </div>
-          </div>
-        </div>
-        <div class="client-slider mb-5">
-          <div class="slide-track">
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-            </div>
+            <h5 class="mt-5 vam_head_h3" data-aos="fade-right">Associations</h5>
           </div>
         </div>
       </div>
-    </section>
-    <!--================ End Client Slider Area =================-->
+      <div class="client-slider mb-5">
+        <div class="slide-track" data-aos="fade-up" data-aos-delay="200">
+          <div class="slide">
+            <img src="./img/other/jlo-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/mb-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/saw-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/shopify-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/wp-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/sfcc-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/bc-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/mag-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/blr-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/alg-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/solr-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/aws-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/els-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/cnt-logo.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/other/cst-logo.png" height="100" width="250" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ End Client Slider Area =================-->
 
      <!--================ Start Footer Area =================-->
  <footer class="footer-area section-gap">
   <div class="container">
     <div class="row">
       <div class="col-lg-4  col-md-6 col-sm-6">
-        <div class="single-footer-widget">
+        <div class="single-footer-widget" data-aos="fade-up">
           <h6>Security Standard Certified</h6>
           <div class="cert">
             <img src="./img/pci-logo.png">
@@ -579,7 +536,7 @@
         </div>
       </div>
       <div class="col-lg-4  col-md-6 col-sm-6">
-        <div class="single-footer-widget">
+        <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="100">
           <h6>Locate Us</h6>
           <p>   
             <span class="flag"><img src="./img/flag-india.png"/></span>
@@ -602,21 +559,21 @@
         </div>
       </div>
       <div class="col-lg-2  col-md-6 col-sm-6">
-        <div class="single-footer-widget mail-chimp">
+        <div class="single-footer-widget mail-chimp" data-aos="fade-up" data-aos-delay="200">
           <h6 class="mb-20">Links</h6>
           <ul class="instafeed flex-wrap">
-            <li><a href="#"> About us</a></li>
-            <li><a href="#"> Services</a></li>
-            <li><a href="#"> Careers</a></li>
-            <li><a href="#"> Podcasts</a></li>
-            <li><a href="#"> Contact us</a></li>
+            <li><a href="about.html"> About us</a></li>
+            <li><a href="services.html"> Services</a></li>
+            <li><a href="careers.html"> Careers</a></li>
+            <li><a href="blogs.html"> Articles</a></li>
+            <li><a href="contact.html"> Contact us</a></li>
             
           
           </ul>
         </div>
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6">
-        <div class="single-footer-widget">
+        <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="300">
           <h6>Connect with Us</h6>
           <p>
             <a href="mailto:collab@squaredatalabs.com" class="text-white">collab@squaredatalabs.com</a><br/>
@@ -627,10 +584,10 @@
           
          
           <div class="footer-social d-flex align-items-center">
-            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61550354762526" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.linkedin.com/company/square-datalabs-llc/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/Square_DataLabs" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/squaredatalabsllc/" target="_blank"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -665,5 +622,10 @@
     ></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/main.js"></script>
+    
+    <!-- Animation script -->
+
+    <script src="lib/aos/aos.js"></script>
+
   </body>
 </html>

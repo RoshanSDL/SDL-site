@@ -35,24 +35,27 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="lib/aos/aos.css">
+
   </head>
 
   <body>
     <!--================ Start Social media Bars =================-->
 
+  
     <!-- Floating Social Media bar Starts -->
-<div class="float-sm">
-  <div class="fl-fl float-fb">
-    <i class="fa fa-phone"></i>
-    <a href="" target="_blank"> Say hello!</a>
-  </div>
-  <div class="fl-fl float-tw">
-    <i class="fa fa-whatsapp"></i>
-    <a href="" target="_blank">Reach out!</a>
-  </div>
+    <div class="float-sm">
+      <div class="fl-fl float-fb">
+       <a href="tel:+971 564651977" target="_blank"> <i class="fa fa-phone"></i> 
+         Say hello!</a>
+      </div>
+      <div class="fl-fl float-tw">
+        
+        <a href="https://api.whatsapp.com/send?phone=+971 564651977&text=Hello SquareDataLabs" target="_blank"><i class="fa fa-whatsapp"></i> Reach out!</a>
+      </div>
 
-</div>
-<!-- Floating Social Media bar Ends -->
+    </div>
+  <!-- Floating Social Media bar Ends -->
 
     <!--================ End Social media Bars =================-->
 
@@ -130,8 +133,8 @@
     <section class="banner-area2 relative">
       <div class="overlay overlay-bg"></div>
       <div class="banner-content text-center">
-        <h1>Contact Us</h1>
-        <p>
+        <h1 data-aos="fade-right">Contact Us</h1>
+        <p data-aos="fade-right" data-aos-delay="100">
           Communication is the key to success. Let's stay connected
         </p>
       </div>
@@ -146,28 +149,24 @@
             <div class="sec-title ">
               <!-- <span class="title ">About SquareDataLabs</span> -->
               <div class="vam_text">
-                <h1 class="vam_text_h1">Drop us a line </h1>
+                <h1 class="vam_text_h1" data-aos="fade-right" data-aos-delay="100">Drop us a line </h1>
               </div>
               <div class="col-md-6 px-5">
                 
               </div>
-              <h2>We have touched down our bases in different countries and we are planting our seeds globally.</h2>
+              <h2 data-aos="fade-right" data-aos-delay="100">We have touched down our bases in different countries and we are planting our seeds globally.</h2>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right" data-aos-delay="200">
             <img src="./img/innerpages/cont-4.jpg" class="image-fluid"/>
           </div>
-          <div class="col-md-7">
-            <form
-              class="form-area contact-form text-right"
-              id="myForm"
-              action="mail.php"
-              method="post"
-            >
+          <div class="col-md-7" data-aos="fade-left" data-aos-delay="300">
+            <form class="form-area contact-form text-right" id="myForm"
+              action="mail.php" method="post">
               <div class="row">
                 <div class="col-lg-6 form-group">
                   <input
-                    name="name"
+                    name="fullname" id="fullname"
                     placeholder="Enter your name"
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Enter your name'"
@@ -177,7 +176,7 @@
                   />
 
                   <input
-                    name="email"
+                    name="phone" id="phone"
                     placeholder="Enter phone number"
                     pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                     onfocus="this.placeholder = ''"
@@ -187,7 +186,7 @@
                     type="text"
                   />
                   <input
-                  name="email"
+                  name="email" id="email"
                   placeholder="Enter email address"
                   pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                   onfocus="this.placeholder = ''"
@@ -210,7 +209,7 @@
                 <div class="col-lg-6 form-group">
                   <textarea
                     class="common-textarea form-control"
-                    name="message"
+                    name="comments" id="comments"
                     placeholder="Enter Messege"
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Enter Messege'"
@@ -235,7 +234,7 @@
 
           <div class="row addrs mt-5 mb-5 py-5">
 
-            <div class="col-md-3 d-flex flex-column address-wrap">
+            <div class="col-md-3 d-flex flex-column address-wrap" data-aos="fade-up">
               
               <div class="single-contact-address d-flex flex-row">
                 <div class="icon"><span class="lnr lnr-home"></span></div>
@@ -262,13 +261,13 @@
               </div>
               
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
               <div class="bldg">
                 <img src="./img/innerpages/cont-1.jpg"/>
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="map-holder">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.522715851658!2d76.36179135805959!3d10.013106148210543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c82738233e5%3A0xc013687a7202eb7c!2sCarnival%20Infopark%20Phase%201!5e0!3m2!1sen!2sin!4v1690899730757!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
@@ -281,7 +280,7 @@
 
            <div class="row addrs mt-5 mb-5 py-5">
 
-            <div class="col-md-3 d-flex flex-column address-wrap">
+            <div class="col-md-3 d-flex flex-column address-wrap" data-aos="fade-up">
               
               <div class="single-contact-address d-flex flex-row">
                 <div class="icon"><span class="lnr lnr-home"></span></div>
@@ -309,13 +308,13 @@
               </div>
               
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
               <div class="bldg">
                 <img src="./img/innerpages/cont-5.jpg"/>
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="map-holder">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15716.159832988886!2d76.3306872!3d10.0135582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080cf735595e41%3A0x910a0b3198bae5ae!2sReliance%20SMART%20Superstore!5e0!3m2!1sen!2sin!4v1691144609351!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
@@ -327,7 +326,7 @@
           <!-- Location Usa Starts -->
           <div class="row addrs mt-5 mb-5 py-5">
 
-            <div class="col-md-3 d-flex flex-column address-wrap">
+            <div class="col-md-3 d-flex flex-column address-wrap" data-aos="fade-up">
               
               <div class="single-contact-address d-flex flex-row">
                 <div class="icon"><span class="lnr lnr-home"></span></div>
@@ -355,13 +354,13 @@
               
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
               <div class="bldg">
                 <img src="./img/innerpages/cont-3.jpg"/>
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="map-holder">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26527.587484647112!2d-117.92028511248095!3d33.787829725089274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7808f4b9267%3A0xc4946176e754a1ed!2sOrange%2C%20CA%2092868%2C%20USA!5e0!3m2!1sen!2sin!4v1690902807307!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
@@ -373,7 +372,7 @@
           
           <div class="row addrs mt-5 mb-5 py-5">
 
-            <div class="col-md-3 d-flex flex-column address-wrap">
+            <div class="col-md-3 d-flex flex-column address-wrap" data-aos="fade-up">
               
               <div class="single-contact-address d-flex flex-row">
                 <div class="icon"><span class="lnr lnr-home"></span></div>
@@ -401,13 +400,13 @@
               
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
               <div class="bldg">
                 <img src="./img/innerpages/cont-2.jpg"/>
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="map-holder">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.252165923606!2d55.367399015012076!3d25.32931798383487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bc3781eb62f%3A0xf1a8e0e79a075cb0!2sPearl%20Tower!5e0!3m2!1sen!2sin!4v1690902882122!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
@@ -422,9 +421,9 @@
     <!--================ End Contact Area =================-->
 
     
-   <!--================ Start Client Slider Area =================-->
+    <!--================ Start Client Slider Area =================-->
 
-   <section id="clients">
+  <section id="clients">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -434,12 +433,12 @@
             <div class="col-md-6 px-5">
               
             </div>
-            <h5 class="mt-5 vam_head_h3">Associations</h5>
+            <h5 class="mt-5 vam_head_h3" data-aos="fade-right">Associations</h5>
           </div>
         </div>
       </div>
       <div class="client-slider mb-5">
-        <div class="slide-track">
+        <div class="slide-track" data-aos="fade-up" data-aos-delay="200">
           <div class="slide">
             <img src="./img/other/jlo-logo.png" height="100" width="250" alt="" />
           </div>
@@ -491,12 +490,12 @@
   </section>
   <!--================ End Client Slider Area =================-->
 
-   <!--================ Start Footer Area =================-->
+    <!--================ Start Footer Area =================-->
  <footer class="footer-area section-gap">
   <div class="container">
     <div class="row">
       <div class="col-lg-4  col-md-6 col-sm-6">
-        <div class="single-footer-widget">
+        <div class="single-footer-widget" data-aos="fade-up">
           <h6>Security Standard Certified</h6>
           <div class="cert">
             <img src="./img/pci-logo.png">
@@ -506,7 +505,7 @@
         </div>
       </div>
       <div class="col-lg-4  col-md-6 col-sm-6">
-        <div class="single-footer-widget">
+        <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="100">
           <h6>Locate Us</h6>
           <p>   
             <span class="flag"><img src="./img/flag-india.png"/></span>
@@ -529,21 +528,21 @@
         </div>
       </div>
       <div class="col-lg-2  col-md-6 col-sm-6">
-        <div class="single-footer-widget mail-chimp">
+        <div class="single-footer-widget mail-chimp" data-aos="fade-up" data-aos-delay="200">
           <h6 class="mb-20">Links</h6>
           <ul class="instafeed flex-wrap">
-            <li><a href="#"> About us</a></li>
-            <li><a href="#"> Services</a></li>
-            <li><a href="#"> Careers</a></li>
-            <li><a href="#"> Podcasts</a></li>
-            <li><a href="#"> Contact us</a></li>
+            <li><a href="about.html"> About us</a></li>
+            <li><a href="services.html"> Services</a></li>
+            <li><a href="careers.html"> Careers</a></li>
+            <li><a href="blogs.html"> Articles</a></li>
+            <li><a href="contact.html"> Contact us</a></li>
             
           
           </ul>
         </div>
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6">
-        <div class="single-footer-widget">
+        <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="300">
           <h6>Connect with Us</h6>
           <p>
             <a href="mailto:collab@squaredatalabs.com" class="text-white">collab@squaredatalabs.com</a><br/>
@@ -554,10 +553,10 @@
           
          
           <div class="footer-social d-flex align-items-center">
-            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61550354762526" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.linkedin.com/company/square-datalabs-llc/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/Square_DataLabs" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/squaredatalabsllc/" target="_blank"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -592,5 +591,10 @@
     ></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Animation script -->
+
+  <script src="lib/aos/aos.js"></script>
+
   </body>
 </html>

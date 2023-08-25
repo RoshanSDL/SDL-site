@@ -148,7 +148,6 @@
     img{
       max-width: 130px;
       height: 50px;
-      width:100%;
     }
     @media (max-width: 1199px) {
       margin-right: 16px;
@@ -193,7 +192,7 @@
       margin: 0px 17px;
       color: $black;
       font-size: 14px;
-      font-family: $title-font;
+      font-family: $primary-font;
       font-weight: 500;
       padding: 20px 0px;
       &:hover,
@@ -220,12 +219,13 @@
       border: none;
       @media (max-width: 991px) {
         margin-top: 0px;
+        display: block !important;
+        background: $bg1 !important;
       }
       a {
         display: block;
         margin-bottom: 10px;
         text-transform: capitalize;
-        font-style: italic;
       }
     }
   }
